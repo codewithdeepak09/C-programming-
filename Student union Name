@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+union student{
+	char name[37];
+	char fname[20];
+	int age;
+	float fees;};
+	void main()
+	{
+		union student obj;
+		clrscr();
+		printf("enter your name:");
+		scanf("%s",obj.name);
+		printf("Name=%s",obj.name);
+		
+		printf("\n Enter your father's name:");
+		scanf("%s",obj.fname);
+		printf("father's name=%s",obj.fname);
+		printf("\nEnter your age:");
+		scanf("%d",&obj.age);
+		printf("\n age=%d",obj.age);
+		printf("\nEnter your fees");
+		scanf("%f",&obj.fees);
+		printf("Your fees is %f",obj.fees);
+		getch();}
